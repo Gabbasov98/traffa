@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/fancybox.css">
+    <link rel="stylesheet" href="css/air-datepicker.css">
+    <link rel="stylesheet" href="css/nouislider.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Главная</title>
+</head>
+
+
+
+<style>
+    .wrapper a {
+        font-size: 30px;
+        text-transform: capitalize;
+    }
+
+    .wrapper button {
+        margin-bottom: 25px;
+        width: 300px;
+        height: 45px;
+    }
+</style>
+
+<body class="m-page">
+
+    <div class="wrapper" style="padding: 50px;">
+        <a href="index.html" style="display: block; margin-bottom: 20px;">
+            Главная
+        </a>
+        <a href="about.html" style="display: block; margin-bottom: 20px;">
+            О нас
+        </a>
+        <a href="team.html" style="display: block; margin-bottom: 20px;">
+            Команда
+        </a>
+        <button data-modal="teamModal" style="border: 2px solid #000;margin-bottom: 20px;">
+            ХОЧЕШЬ В КОМАНДУ
+        </button>
+        <button data-modal="thankModal" style="border: 2px solid #000;margin-bottom: 20px;">
+            СПАСИБО!
+        </button>
+        <a href="blog.html" style="display: block; margin-bottom: 20px;">
+            Блог
+        </a>
+        <a href="blog-item.html" style="display: block; margin-bottom: 20px;">
+            Блог - Полная статья
+        </a>
+        <a href="contacts.html" style="display: block; margin-bottom: 20px;">
+            Контакты
+        </a>
+        <a href="shops.html" style="display: block; margin-bottom: 20px;">
+            Магазины
+        </a>
+        <a href="sizes.html" style="display: block; margin-bottom: 20px;">
+            Размерная сетка
+        </a>
+        <a href="cooperate.html" style="display: block; margin-bottom: 20px;">
+            Сотрудничество
+        </a>
+        <a href="delivery.html" style="display: block; margin-bottom: 20px;">
+            Доставка и оплата
+        </a>
+        <a href="payment.html" style="display: block; margin-bottom: 20px;">
+            Правила оплаты
+        </a>
+        <a href="politics.html" style="display: block; margin-bottom: 20px;">
+            Политика конфиденциальности
+        </a>
+        <a href="404.html" style="display: block; margin-bottom: 20px;">
+            404
+        </a>
+
+        <hr style="margin-bottom: 20px;">
+
+        <a href="catalog3.html" style="display: block; margin-bottom: 20px;">
+            Каталог с баннером
+        </a>
+        <a href="catalog.html" style="display: block; margin-bottom: 20px;">
+            Каталог без баннера
+        </a>
+        <a href="catalog2.html" style="display: block; margin-bottom: 20px;">
+            Каталог баннер в контенте
+        </a>
+        <a href="search.html" style="display: block; margin-bottom: 20px;">
+            Результаты поиска
+        </a>
+        <a href="search-empty.html" style="display: block; margin-bottom: 20px;">
+            Результаты поиска - Нет результатов
+        </a>
+
+        <hr style="margin-bottom: 20px;">
+
+        <a href="catalog-item.html" style="display: block; margin-bottom: 20px;">
+            Карточка товара
+        </a>
+        <button data-alert="productAlert" style="border: 2px solid #000;margin-bottom: 20px;">
+            Добавлено к корзину
+        </button>
+        <button data-alert="productAlert2" style="border: 2px solid #000;margin-bottom: 20px;">
+            Не выбраны опции
+        </button>
+
+        <hr style="margin-bottom: 20px;">
+
+        <a href="cart.html" style="display: block; margin-bottom: 20px;">
+            Корзина
+        </a>
+        <a href="cart-empty.html" style="display: block; margin-bottom: 20px;">
+            Корзина (пусто)
+        </a>
+        <button data-alert="productAlert3" style="border: 2px solid #000;margin-bottom: 20px;">
+            Товар удалён из корзины
+        </button>
+        <a href="order.html" style="display: block; margin-bottom: 20px;">
+            Оформление заказа
+        </a>
+        <a href="order-thank.html" style="display: block; margin-bottom: 20px;">
+            Спасибо за заказ
+        </a>
+
+        <hr style="margin-bottom: 20px;">
+
+        <a href="favourite.html" style="display: block; margin-bottom: 20px;">
+            Избранные товары
+        </a>
+        <a href="favourite-empty.html" style="display: block; margin-bottom: 20px;">
+            Избранные товары (пусто)
+        </a>
+
+        <hr style="margin-bottom: 20px;">
+
+        <a href="login.html" style="display: block; margin-bottom: 20px;">
+            Авторизация
+        </a>
+        <a href="reg.html" style="display: block; margin-bottom: 20px;">
+            Регистрация
+        </a>
+        <a href="forgot-password.html" style="display: block; margin-bottom: 20px;">
+            Восстановление пароля - Шаг 1
+        </a>
+        <a href="forgot-password2.html" style="display: block; margin-bottom: 20px;">
+            Восстановление пароля - Шаг 2
+        </a>
+        <a href="forgot-password3.html" style="display: block; margin-bottom: 20px;">
+            Восстановление пароля - Шаг 3
+        </a>
+        <a href="forgot-password4.html" style="display: block; margin-bottom: 20px;">
+            Восстановление пароля - Шаг 4
+        </a>
+
+        <hr style="margin-bottom: 20px;">
+
+        <a href="lk.html" style="display: block; margin-bottom: 20px;">
+            Личный кабинет - Главная
+        </a>
+        <a href="lk2.html" style="display: block; margin-bottom: 20px;">
+            Личный кабинет - Главная (нет заказов)
+        </a>
+        <a href="user-data.html" style="display: block; margin-bottom: 20px;">
+            Личный кабинет - Данные
+        </a>
+        <a href="user-data2.html" style="display: block; margin-bottom: 20px;">
+            Личный кабинет - Данные (успех)
+        </a>
+        <a href="orders.html" style="display: block; margin-bottom: 20px;">
+            Личный кабинет - История заказов
+        </a>
+        <a href="orders2.html" style="display: block; margin-bottom: 20px;">
+            Личный кабинет - История заказов (нет заказов)
+        </a>
+        <a href="order-item.html" style="display: block; margin-bottom: 20px;">
+            Личный кабинет - Страница одного заказа
+        </a>
+        <a href="address.html" style="display: block; margin-bottom: 20px;">
+            Личный кабинет - Мой адрес
+        </a>
+        <a href="address2.html" style="display: block; margin-bottom: 20px;">
+            Личный кабинет - Мой адрес (нет адресов)
+        </a>
+        <a href="address3.html" style="display: block; margin-bottom: 20px;">
+            Личный кабинет - Мой адрес (Редактирование адреса)
+        </a>
+        <a href="change-password.html" style="display: block; margin-bottom: 20px;">
+            Личный кабинет - Смена пароля
+        </a>
+        <a href="change-password2.html" style="display: block; margin-bottom: 20px;">
+            Личный кабинет - Смена пароля (успех)
+        </a>
+
+        <hr style="margin-bottom: 20px;">
+
+        <a href="ui.html" style="display: block; margin-bottom: 20px;">
+            UI
+        </a>
+
+
+
+    </div>
+
+
+
+
+
+
+
+    <div id="productAlert" class="m-alert">
+        <div class="product-alert">
+            <div class="product-alert__img">
+                <img src="img/color.webp" alt="">
+            </div>
+            <div class="product-alert__content">
+                <div class="product-alert__desc">
+                    Добавлено к корзину
+                </div>
+                <div class="product-alert__title">
+                    Кроссовки VAAN LYN LX
+                </div>
+            </div>
+        </div>
+        <button class="m-alert__close">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.5 3.5L3.5 10.5" stroke="black" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
+                <path d="M3.5 3.5L10.5 10.5" stroke="black" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
+            </svg>
+        </button>
+    </div>
+
+    <div id="productAlert2" class="m-alert m-alert2">
+        <div class="product-alert">
+            <div class="product-alert__content">
+                <div class="product-alert__desc">
+                    Не выбраны опции
+                </div>
+                <div class="product-alert__title">
+                    Прежде чем добавить в корзину этот товар, укажите нужный размер и цвет.
+                </div>
+            </div>
+        </div>
+        <button class="m-alert__close">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.5 3.5L3.5 10.5" stroke="black" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
+                <path d="M3.5 3.5L10.5 10.5" stroke="black" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
+            </svg>
+        </button>
+    </div>
+
+    <div id="productAlert3" class="m-alert">
+        <div class="product-alert">
+            <div class="product-alert__img">
+                <img src="img/color.webp" alt="">
+            </div>
+            <div class="product-alert__content">
+                <div class="product-alert__desc">
+                    Товар удалён из корзины
+                </div>
+                <div class="product-alert__title">
+                    Кроссовки VAAN LYN LX
+                </div>
+            </div>
+        </div>
+        <button class="m-alert__close">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.5 3.5L3.5 10.5" stroke="black" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
+                <path d="M3.5 3.5L10.5 10.5" stroke="black" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
+            </svg>
+        </button>
+    </div>
+
+    <div class="modal" id="teamModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="modal__close _close-modal">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.5 3.5L3.5 10.5" stroke="black" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
+                    <path d="M3.5 3.5L10.5 10.5" stroke="black" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
+                </svg>
+            </button>
+            <div class="modal__top">
+                <div class="h2 caps-text">
+                    ХОЧЕШЬ В <br> КОМАНДУ TRAFFA?
+                </div>
+                <div class="modal__desc">
+                    <div class="text16">
+                        Заполни простую форму. Расскажи о себе и мы свяжемся с тобой.
+                    </div>
+                </div>
+            </div>
+            <form action="" class="modal-form">
+                <div class="modal-form__fields">
+                    <div class="fg fg--type2">
+                        <label>Email <span>*</span></label>
+                        <input type="text" placeholder="Электронная почта">
+                    </div>
+                    <div class="fg fg--type2">
+                        <label>Номер телефона <span>*</span></label>
+                        <input type="tel" placeholder="+7 (___) ___ - __ - __">
+                    </div>
+                    <div class="fg fg--type2 _full-tablet">
+                        <label>Ваше имя <span>*</span></label>
+                        <input type="text" placeholder="Ваше имя">
+                    </div>
+                    <div class="fg fg--type2 _full">
+                        <label>Расскажи о себе <span>*</span></label>
+                        <textarea placeholder="Кратко, кто ты, откуда, почему хочешь работать с нами"></textarea>
+                    </div>
+                </div>
+                <div class="file-input">
+                    <div class="file-input__col">
+                        <button class="file-input__btn m-btn-black">
+                            <input type="file">
+                        </button>
+                    </div>
+                    <div class="file-input__col2">
+                        <div class="file-input__text">
+                            <div class="file-input__title text16">
+                                Прикрепить файл
+                            </div>
+                            <div class="file-input__desc text14 gray-text">
+                                DOC, DPF до 10мб.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-form__bottom _flex">
+                    <button class="modal-form__btn m-btn m-btn-black">
+                        <span>Отправить</span>
+                    </button>
+                    <div class="modal-form__hint">
+                        <div class="text14">
+                            Нажимая кнопку “Подписаться”, вы соглашаетесь на обработку персональных данных в соответствии с
+                            <a href="">Политикой конфиденциальности</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal__arrows">
+                    <div class="m-arrows">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal thank-modal" id="thankModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="modal__close _close-modal">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.5 3.5L3.5 10.5" stroke="black" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
+                    <path d="M3.5 3.5L10.5 10.5" stroke="black" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
+                </svg>
+            </button>
+            <div class="modal__top">
+                <div class="h2 caps-text">
+                    СПАСИБО ЗА ОБРАЩЕНИЕ!
+                </div>
+            </div>
+            <div class="thank-modal__desc text16">
+                Рады, что вы хотите стать частью команды TRAFFA. Мы ознакомимся с резюме и перезвоним вам в ближайшее время.
+            </div>
+            <button class="_close-modal thank-modal__btn m-btn m-btn-black">
+                <span>ЗАКРЫТЬ</span>
+            </button>
+
+            <div class="modal__arrows">
+                <div class="m-arrows">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--  -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/fancybox.umd.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/air-datepicker.js"></script>
+    <script src="js/nouislider.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+</body>
+
+</html>
